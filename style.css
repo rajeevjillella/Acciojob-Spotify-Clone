@@ -69,11 +69,98 @@ a{
     overflow: auto;
     background-color: var(--grey);
     border-radius: .5rem;
-    padding: 1rem 1.5rem;
+    /* padding: 1rem 1.5rem; */
     border-radius: .5rem;
     height: 90vh;
     
 }
+
+.container .sidebar .library .libup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: var(--grey);
+    position: sticky;
+    top: 0%;
+}
+
+.library .icons{
+    display: flex;
+}
+
+.library .icons .icon{
+
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.library .icons .icon img{
+    width: 16px;
+    height: 16px;
+}
+
+.libdown{
+    padding: 0rem 1.5rem;
+}
+
+.libdown .licardslist{
+
+}
+
+.libdown .licardslist .licard{
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: .8rem;
+
+    padding: .2rem;
+    margin-top: 16px;
+    /* border-radius: 4px; */
+}
+
+
+
+
+.libdown .licardslist .licard img{
+
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+.libdown .licardslist .licard .info{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 4px;
+
+}
+
+.libdown .licardslist .licard .info h5{
+
+    margin: 0px;
+    font-size: 16px;
+
+}
+
+.libdown .licardslist .licard .info p{
+
+    margin: 0px;
+    font-size: 12px;
+
+}
+
+
 
 
 .player{
@@ -276,8 +363,8 @@ header{
 }
 
 
-hr{
-    margin: 24px;
+.main-container hr{
+    margin: 0px 24px;
     border: 1px solid var(--light-grey);
 }
 
@@ -293,6 +380,7 @@ hr{
     align-items: center;
     gap: .8rem;
     margin: 8px 24px;
+    width: 30%;
 }
 
 .sname{
@@ -324,6 +412,137 @@ hr{
 }
 
 .player .pleft .love img{
+    width: 16px;
+    height: 16px;
+}
+
+.pcenter{
+
+    width: 40%;
+
+}
+
+.player .pcenter .icons {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player .pcenter .ico{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player .pcenter .cu .ico img{
+
+    width: 24px;
+    height: 24px;
+}
+
+.cu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.player .pcenter .cu .icons img{
+
+    width: 20px;
+    height: 20px;
+    opacity: 60%;
+}
+
+.player .pcenter .cu .icons img:hover{
+
+    width: 20px;
+    height: 20px;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.cd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.player .pcenter .cd hr{
+
+    width: 80%;
+    border: 2px solid var(--light-grey);
+}
+
+.player .pcenter .cd  span{
+
+    font-size: 12px;
+}
+
+.pright{
+    width: 30%;
+    margin: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+
+.player .pright .ricons{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 80%;
+
+}
+
+.player .pright .ricons .icon{
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player .pright .ricons .icon img{
+
+    width: 20px;
+    height: 20px;
+    opacity: 60%;
+}
+
+.player .pright .ricons .icon img:hover {
+
+    width: 20px;
+    height: 20px;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.volume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    gap: 4px;
+    margin: 4px 0px;
+}
+
+.volume hr{
+    width: 50%;
+    border: 2px solid white;
+    margin: 0px;
+
+}
+
+.sixteen img{
     width: 16px;
     height: 16px;
 }
